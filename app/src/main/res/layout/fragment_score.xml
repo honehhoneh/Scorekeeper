@@ -1,5 +1,4 @@
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -25,10 +24,12 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="24dp"
+        android:background="@drawable/custom_button"
         android:contentDescription="Plus Button"
+        android:src="@drawable/ic_plus"
+        android:tint="@color/colorPrimary"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTeamName"
-        app:srcCompat="@drawable/ic_plus" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTeamName" />
 
     <ImageButton
         android:id="@+id/btnMinus"
@@ -36,10 +37,12 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="16dp"
         android:layout_marginTop="24dp"
+        android:background="@drawable/custom_button"
         android:contentDescription="Minus Button"
+        android:src="@drawable/ic_minus"
+        android:tint="@color/colorPrimary"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTeamName"
-        app:srcCompat="@drawable/ic_minus" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTeamName" />
 
     <TextView
         android:id="@+id/textView2"
