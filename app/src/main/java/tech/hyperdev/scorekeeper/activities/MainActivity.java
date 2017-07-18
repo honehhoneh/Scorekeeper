@@ -14,10 +14,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ScoreFragment fragment = new ScoreFragment();
+        ScoreFragment fragment = ScoreFragment.newInstance("TEAM 1");
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_container_one, fragment).commit();
 
-        ScoreFragment fragment2 = new ScoreFragment();
+        ScoreFragment fragment2 = ScoreFragment.newInstance("TEAM 2");
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_container_two, fragment2).commit();
 
     }
